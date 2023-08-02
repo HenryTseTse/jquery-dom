@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Movie Ratings</h1>
+
+        <form class="form" id="movie-form">
+            <div class="form-container">
+                <label for="title">Title</label>
+                <input type="text" required id="title" class="forms">
+            </div>
+
+            <div class="form-container">
+                <label for="rating">Rating</label>
+                <input type="text" required min="0" max="10" id="rating" class="forms">
+            </div>
+
+            <div class="form-container">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th id="title" class="table-header sort-down" scope="col">Title</th>
+                <th id="rating" class="table-header sort-down" scope="col">Rating</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movie-table-body">
+
+        </tbody>
+    </table>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="movies.js"></script>  
+</body>
+</html>
